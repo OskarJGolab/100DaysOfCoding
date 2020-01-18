@@ -1,0 +1,29 @@
+def buy_groceries(item1, item2, item3, item4, item5):
+	print(f"Buying {item1}")
+	print(f"Buying {item2}")
+	print(f"Buying {item3}")
+	print(f"Buying {item4}")
+	print(f"Buying {item5}")
+
+grocery_list = ['chicken', 'onions', 'rice', 'peppers', 'bananas']
+
+print(buy_groceries('chicken','cabbage','mustard','pickles','bread'))
+
+def buy_grocery(items):
+	for item in items:
+		print(f"Buying {item}")
+
+print(buy_grocery(grocery_list))
+
+------
+
+grocery_list = ['chicken0','onions1','rice2','peppers3','bananas4']
+
+for item in grocery_list:
+	print(item)
+
+for item in range(0, len(grocery_list), 2):
+	print(item, grocery_list[item])
+
+grocery_list[-1] = 'oranges4'
+print(grocery_list)
