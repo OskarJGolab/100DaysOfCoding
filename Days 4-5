@@ -34,3 +34,16 @@ me_dict = dict(key_value_pairs)
 print(me_dict)
 
 print('oskar' in key_value_pairs)
+
+##########################################
+
+results = []
+def mult(numbers):
+	for i in numbers:
+		results.append(i*10)
+	return results
+
+test_numbers = [1, 2, 3]
+print(mult(test_numbers))
+
+
