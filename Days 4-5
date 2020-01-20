@@ -1,0 +1,36 @@
+example_list = ['oskar',9, True] # Mutable, ordered, homogeneous
+example_tuple = ('oskar',9, True) # Immutable, ordered, homogeneous
+example_set = {'oskar',9, True} # Mutable, unordered, homogeneous
+example_dict = {'name':'oskar','number':9,'has dog':True} # Similar to a List but includes key value pairs as another way to index values in a set.
+
+print(example_set)
+print(example_set.pop())
+
+def first_last(s):
+	return s[0],s[-1]
+
+
+chars = first_last('Hello!')
+
+first, last  = first_last('Hello!')
+print(first)
+print(last)
+
+name, number, boolean = example_tuple # Unpacking
+print(name)
+print(number)
+print(boolean)
+
+print(f"My name is {example_dict['name'].title()}.")
+
+# Assigning dict values with zip
+example_list = ['oskar', 9, True] 
+key_values = ['name','number','has dog']
+
+key_value_pairs = list(zip(key_values,example_list))
+print(key_value_pairs)
+
+me_dict = dict(key_value_pairs)
+print(me_dict)
+
+print('oskar' in key_value_pairs)
