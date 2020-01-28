@@ -1,0 +1,11 @@
+TOR = 96
+GSW = 83
+
+def winner(a,b):
+	if a > b:
+		return f"{a} is the winner."
+	else:
+		return f"{b} is the winner."
+
+
+print(winner(TOR,GSW))
